@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Stats">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/current_pcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f6fa"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="20dp"
+        app:cardCornerRadius="40dp"
+        android:visibility="invisible"
+
+        >
+
+        <LinearLayout
+
+            android:paddingBottom="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+
+                android:id="@+id/pImage"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/name"
+                android:paddingVertical="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="30sp"
+                android:textColor="#000"
+
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:gravity="center"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="4dp"
+                android:orientation="vertical"
+                app:chipBackgroundColor="#2bcbba"
+                android:id="@+id/chip_rv"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Height"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:gravity="center"
+                />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="4dp"
+                android:clickable="false"
+                app:chipBackgroundColor="#dff9fb"
+                android:layout_gravity="center"
+                />
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:gravity="center"
+                />
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:chipBackgroundColor="#fff200"
+                android:layout_marginHorizontal="4dp"
+                android:clickable="false"
+                android:id="@+id/weight"
+                android:layout_gravity="center"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Base XP"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:gravity="center"
+                />
+
+            <com.google.android.material.chip.Chip
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginHorizontal="4dp"
+                android:clickable="false"
+                app:chipBackgroundColor="#2bcbba"
+                android:id="@+id/base_xp"
+                android:layout_gravity="center"
+                />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
